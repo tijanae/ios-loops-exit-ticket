@@ -17,15 +17,16 @@ What will the code below print?
 var myNum = 8
 
 for number in 4..<8{
-    if number == 7 {
-        break
-    } else {
-        myNum += number
-    }
+if number == 7 {
+break
+} else {
+myNum += number
+}
 }
 
 print(myNum)
 ```
+23
 
 ***
 ## Question 2
@@ -35,31 +36,31 @@ Which of the following loops will print out all the numbers between 1 and 100, i
 a)
 ```swift
 for i in 1..<100 {
-    print(i)
+print(i)
 }
 ```
 
 B)
 ```swift
 for j in 1...100 {
-    print(j)
+print(j)
 }
 ```
 
 C)
 ```swift
 for k in 1..<1000 where k < 101 {
-    print(k)
+print(k)
 }
 ```
 
 D)
 ```swift
 for l in 1...100 where _ < 101 {
-    print(l)
+print(l)
 }
 ```
-
+A, B, and C
 ***
 ## Question 3
 
@@ -67,12 +68,12 @@ How many times will the code below print **"Nesting!"** ?
 
 ```swift
 for _ in 1...10{
-    for _ in 1...10{
-        print("Nesting!")
-    }
+for _ in 1...10{
+print("Nesting!")
+}
 }
 ```
-
+100 because it runs 10 times within each loop.
 ***
 ## Question 4
 
@@ -83,8 +84,8 @@ a)
 var q = 0
 
 while q%2 != 1 {
-    print("Hello Problem Two!")
-    q += 2
+print("Hello Problem Two!")
+q += 2
 }
 ```
 
@@ -93,8 +94,8 @@ b)
 var r = 0
 
 while r < 10 {
-    print("Hi there!")
-    r += 11
+print("Hi there!")
+r += 11
 }
 ```
 
@@ -103,8 +104,8 @@ c)
 var s = 0
 
 while 3 != 3 {
-    print("Howdy!")
-    s += 1
+print("Howdy!")
+s += 1
 }
 ```
 
@@ -113,9 +114,10 @@ d)
 var t = 0
 
 while t == t{
-    print("Ahoy-hoy!")
-    t += 1
+print("Ahoy-hoy!")
+t += 1
 }
 ```
-
+A and D will loop forever
 ***
+
